@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#main {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+header {
+    text-align: center;
+}
+
+section,
+figure,
+#tribute-info,
+footer {
+    display: inherit;
+    flex-direction: inherit;
+    align-items: inherit;
+}
+
+section,
+#tribute-info {
+    width: 70%;
+    gap: 30px;
+    text-align: center;
+}
+
+#image {
+    max-width: 220px;
+    height: 288px;
+}
