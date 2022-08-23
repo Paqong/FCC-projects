@@ -56,6 +56,6 @@ section,
 }
 
 #image {
-    max-width: 220px;
-    height: 288px;
+    max-width: 100%;
+    height: auto;
 }
