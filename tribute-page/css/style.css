@@ -5,17 +5,32 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+html {
+    background: url(https://marciokenobi.files.wordpress.com/2012/12/stan-lee.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
 #main {
-    height: 100vh;
-    width: 100%;
+    min-height: 100vh;
+    width: 80%;
+    background-color: rgb(48, 47, 47, .9);
+    color: #fff;
+    margin: 20px auto;
+    padding: 20px 0;
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 30px;
+    border-radius: 20px;
 }
 
 header {
     text-align: center;
+}
+
+h1 {
+    font-size: 50px;
 }
 
 section,
@@ -27,11 +42,17 @@ footer {
     align-items: inherit;
 }
 
+header,
 section,
 #tribute-info {
     width: 70%;
     gap: 30px;
     text-align: center;
+}
+
+#img-div {
+    display: flex;
+    gap: 10px;
 }
 
 #image {
