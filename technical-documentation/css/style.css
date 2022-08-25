@@ -1,0 +1,19 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    position: fixed;
+    width: 25%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: aquamarine;
+}
+
+main {
+    width: 75%;
+    margin-left: 25%;
+    height: 100%;
+}
