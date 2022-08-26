@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -12,8 +16,8 @@
 }
 
 #navbar > header {
-    height: 10%;
-    font-size: 2em;
+    margin: 15px;
+    font-size: 1.8em;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -49,13 +53,47 @@
     overflow: auto;
 }
 
-section > header {
-    font-size: 2em;
-    margin-bottom: 10px;
+.main-section {
+    width: 100%;
+    overflow: hidden;
 }
 
-article > p {
+.main-section > header {
+    font-size: 2em;
+}
+
+p {
     padding-left: 20px;
     line-height: 1.4em;
     margin: 1em auto;
+}
+
+code {
+    display: block;
+    padding: 20px;
+    margin-left: 20px;
+    width: 100%;
+    background-color: #f7f7f7;
+}
+
+@media only screen and (max-width: 1000px) {
+    #navbar {
+        max-height: 300px;
+        width: 100%;
+        position: unset;
+    }
+
+    #navbar > ul {
+        height: 200px;
+        width: 90%;
+        margin: auto;
+        border: 3px solid rgb(128, 128, 128, 0.8);
+    }
+ 
+    #main-doc {
+        min-height: 70%;
+        max-width: 100%;
+        margin-left: 0;
+        border-left: 0;
+    }
 }
