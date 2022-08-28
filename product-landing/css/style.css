@@ -19,6 +19,7 @@ html {
     align-items: center;
     font-size: 8rem;
     background-color: #eee;
+    z-index: 1;
 }
 
 .logo {
@@ -37,13 +38,13 @@ html {
     width: 50%;
 }
 
-ul {
+#nav-bar ul {
     list-style: none;
     width: 100%;
     text-align: right;
 }
 
-ul > li {
+#nav-bar ul li {
     display: inline-block;
     font-size: 3rem;
     margin-right: 90px;
@@ -58,11 +59,13 @@ main {
     width: 70%;
     margin: 8rem auto auto auto;
     font-size: 8rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 form {
     width: 60%;
-    margin: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -78,7 +81,8 @@ input[type="email"]{
     font-size: 1.5rem;
 }
 
-#submit {
+#submit,
+.select-btn {
     min-width: 25%;
     font-size: 1.8rem;
     font-weight: bold;
@@ -88,13 +92,17 @@ input[type="email"]{
     background-color: #f1c40f;
 }
 
-#submit:hover {
+#submit:hover,
+.select-btn:hover {
     cursor: pointer;
     background-color: #f1a90f;
     transition: 0.6s;
 }
 
-.wrapper:first-of-type {
+.wrapper:first-of-type,
+#how_it_works,
+#pricing,
+.footer {
     margin-top: 6rem;
 }
 
@@ -124,7 +132,7 @@ input[type="email"]{
 }
 
 .desc {
-    width: 70%;
+    width: 80%;
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -136,5 +144,68 @@ input[type="email"]{
 }
 
 .desc > p {
+    font-size: 1.7rem;
+}
+
+#pricing {
+    width: 100%;
+    display: flex;
+    gap: 5%;
+}
+
+.product {
+    height: 35rem;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid black;
+}
+
+.product > h3 {
+    font-size: 1.7rem;
+    padding: 1.5rem;
+    width: 100%;
+    background-color: #ddd;
+    text-align: center;
+}
+
+.product > h2 {
+    font-size: 2.8rem;
+    margin-top: 2rem;
+}
+
+.product > p:first-of-type {
+    margin-top: 2rem;
+} 
+
+.product > p {
+    margin-top: 1rem;
+    font-size: 1.7rem;
+    font-weight: lighter;
+}
+
+.select-btn {
+    font-weight: normal;
+    margin-top: 4rem;
+    padding: 1.3rem;
+}
+
+.footer {
+    width: 100%;
+    text-align: right;
+    background-color: #ddd;
+    padding: 1.5rem;
+}
+
+.footer > ul {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    gap: 1.5rem;
+    font-size: inherit;
+}
+
+.footer p {
     font-size: 1.7rem;
 }
