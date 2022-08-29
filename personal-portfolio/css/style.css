@@ -1,9 +1,41 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 html {
-    box-sizing: border-box;
     font-size: 62.5%;
+}
+
+header {
+    position: fixed;
+    height: 10%;
+    width: 100%;
+    background-color: #be3144;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    overflow: hidden;
+}
+
+#navbar {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+#navbar li {
+    list-style: none;
+}
+
+#navbar a {
+    font-size: 2.5rem;
+    padding: 2.5rem;
+    text-decoration: none;
+    color: #eee;
+}
+
+#navbar a:hover {
+    background-color: #45567d;
 }
