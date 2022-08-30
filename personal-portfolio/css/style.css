@@ -43,7 +43,7 @@ header {
 }
 
 #welcome-section {
-    height: 100vh;
+    min-height: 100vh;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -57,6 +57,7 @@ header {
 
 #welcome-section h1,
 #contacts h2 {
+    text-align: center;
     font-size: 6rem;
 }
 
@@ -74,7 +75,7 @@ header {
 #projects h2 {
     font-size: 4rem;
     color: #eee;
-    width: 55rem;
+    width: 40%;
     margin: auto;
     text-align: center;
     border-bottom: 1px solid #eee;
@@ -122,7 +123,7 @@ header {
 }
 
 #contacts {
-    height: 80vh;
+    min-height: 80vh;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -153,7 +154,7 @@ header {
 }
 
 .footer {
-    height: 15vh;
+    min-height: 15vh;
     width: 100%;
     background-color: #303841;
     color: #eee;
@@ -162,6 +163,7 @@ header {
     align-items: center;
     gap: 30rem;
     font-size: 2rem;
+    padding: 3rem;
 }
 
 .footer a,
@@ -172,4 +174,14 @@ header {
 
 .footer .fab {
     font-size: 1.7rem;
+}
+
+@media only screen and (max-width: 600px) {
+    html {
+        font-size: 45%;
+    }
+    
+    .footer {
+        font-size: 1.5rem;
+    }
 }
