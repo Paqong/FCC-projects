@@ -68,7 +68,7 @@ header {
 #projects {
     width: 100%;
     background-color: #45567d;
-    padding: 10rem 4rem;
+    padding: 10rem 2.5rem;
 }
 
 #projects h2 {
@@ -79,6 +79,46 @@ header {
     text-align: center;
     border-bottom: 1px solid #eee;
     padding: 0.5rem;
+}
+
+.projects-grid {
+    margin-top: 8rem;
+    width: 100%;
+    display: grid;
+    /*
+    Used to automatically create a column when we add a new element inside our grid. 
+    The width per column will adjust to fit the width of the whole projects-grid.
+    Any additional element that will not fit horizontally will be collapsed to a new row
+    */
+    grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
+    /*gap per column and row*/
+    column-gap: 5rem;
+    row-gap: 5rem;
+}
+
+/*to center the image and title per project*/
+.projects-grid a {
+    /*
+    The width of the p element inside this a element(the project-title class) 
+    uses the entire projects-grid's width when there is only 1 a element inside the projects-grid
+
+    So adding the grid and justify-content to the a element made the following changes:
+    
+    1. the elements inside the a element is in the center of the projects-grid column 
+    when there is only 1 a element inside the projects-grid
+
+    2. p element's width became equal to the img element's width when there is only 1 a element
+    when there is only 1 a element inside the projects-grid
+    */
+    display: grid;
+    justify-content: center;
+}
+
+.project-title {
+    font-size: 2.5rem;
+    padding: 2rem;
+    text-align: center;
+    background-color: #303841;
 }
 
 #contacts {
@@ -124,7 +164,8 @@ header {
     font-size: 2rem;
 }
 
-.footer a {
+.footer a,
+.projects-grid a {
     text-decoration: none;
     color: #eee;
 }
