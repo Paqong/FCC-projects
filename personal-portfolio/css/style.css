@@ -30,7 +30,8 @@ header {
     list-style: none;
 }
 
-#navbar a {
+#navbar a,
+.socials a {
     font-size: 2.5rem;
     padding: 2.5rem;
     text-decoration: none;
@@ -87,13 +88,28 @@ header {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap: 1rem;
     background-color: #303841;
     color: #eee;
     border-bottom: 0.6rem solid #be3144;
 }
 
 #contacts > p {
-    font-size: 2em;
+    font-size: 2rem;
+}
+
+.socials {
+    height: 8rem;
+    display: flex;
+    align-items: center;
+}
+
+.socials a {
+    transition: 0.3s;
+}
+
+.socials a:hover {
+    transform: translateY(1rem);
 }
 
 .footer {
@@ -105,10 +121,14 @@ header {
     justify-content: center;
     align-items: center;
     gap: 30rem;
-    font-size: 2em;
+    font-size: 2rem;
 }
 
 .footer a {
     text-decoration: none;
     color: #eee;
+}
+
+.footer .fab {
+    font-size: 1.7rem;
 }
